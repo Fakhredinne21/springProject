@@ -1,2 +1,10 @@
-package fakhredinne.springproject.Model;public enum Specialite {
+package fakhredinne.springproject.Model;
+
+import java.io.Serializable;
+
+public enum Specialite implements Serializable {
+    IA,
+    RESEAUX,
+    CLOUD,
+    SECURITE
 }
