@@ -6,6 +6,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.io.Serializable;
+import java.util.Set;
+
 @Entity
 @Table( name = "Universite")
 @Getter
@@ -17,5 +19,6 @@ public class Universite implements Serializable {
     @Column(name="idUniv")
     private Long idUniv;
     private String nomUniv;
-   
+    @OneToMany(cascade = CascadeType.ALL)
+    private Set<Departement> Departements;
 }

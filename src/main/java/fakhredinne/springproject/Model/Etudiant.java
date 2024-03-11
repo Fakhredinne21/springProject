@@ -22,5 +22,7 @@ public class Etudiant implements Serializable {
     private String nomE;
     @Enumerated(EnumType.STRING)
     private Option option;
+    @ManyToOne
+    private Departement departement;
 // Constructeur et accesseurs (getters) et mutateurs (setters)
 }

@@ -17,7 +17,9 @@ public class Contrat implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="idContrat")
     private Long idContrat;
+    @Temporal(TemporalType.DATE)
     private Date dateDebutContrat;
+    @Temporal(TemporalType.DATE)
     private Date dateFinContrat;
     @Enumerated(EnumType.STRING)
     private Specialite specialte;
